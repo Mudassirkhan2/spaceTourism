@@ -5,7 +5,7 @@ const Technology = ({data}) => {
   const [value, setValue] = useState(0)
   const {name,description,images}=data[value]
   return (
-    <div className='bg-TechnologyMobile lg:bg-TechnologyDesktop bg-center bg-no-repeat bg-cover h-screen ' >
+    <div className='bg-TechnologyMobile md:bg-TechnologyTablet lg:bg-TechnologyDesktop bg-center bg-no-repeat bg-cover h-screen ' >
       <section className='text-center h-[80vh] lg:p-20'>
           <h3 className='uppercase pt-24 font-BarlowCondensed tracking-widest lg:text-start lg:text-4xl mb-8'>
              <span className='text-gray-500 pr-2'>03</span> SPACE LAUNCH 101
@@ -17,7 +17,7 @@ const Technology = ({data}) => {
 
               <div className='lg:flex lg:flex-col lg:justify-center lg:items-center lg:gap-10'>
                 {
-                  data.map((persons,index)=> <button key={index} onClick={()=>setValue(index)} className={` font-Bellefair h-10 w-10  lg:w-20 lg:h-20 mx-2  rounded-full cursor-pointer border-[1px] border-[#D0D6F9]  ${index===value && "bg-white text-black"}`}>
+                  data.map((persons,index)=> <button key={index} onClick={()=>setValue(index)} className={` font-Bellefair h-10 w-10  lg:w-20 lg:h-20 mx-2  rounded-full cursor-pointer border-[1px] border-[#D0D6F9]  hover:bg-white hover:text-black ${index===value && "bg-white text-black"}`}>
                     {index+1}
                   </button>)
                 }

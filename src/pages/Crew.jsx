@@ -6,7 +6,7 @@ const Crew = ({data}) => {
   const [value, setValue] = useState(0)
   const {name,bio,images,role}=data[value]
   return (
-    <div className='bg-CrewMobile lg:bg-CrewDesktop bg-center bg-no-repeat bg-cover h-screen ' >
+    <div className='bg-CrewMobile md:bg-CrewTablet lg:bg-CrewDesktop bg-center bg-no-repeat bg-cover h-screen ' >
       <section className='text-center h-[80vh] lg:p-20'>
           <h3 className='uppercase pt-24 font-BarlowCondensed tracking-widest lg:text-start lg:text-4xl mb-8'>
              <span className='text-gray-500 pr-2'>02</span> Meet your crew

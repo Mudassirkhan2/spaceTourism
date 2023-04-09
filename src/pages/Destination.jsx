@@ -5,7 +5,7 @@ const Destination = ({data}) => {
   const [value, setValue] = useState(0)
   const {name,description,images,distance,travel}=data[value]
   return (
-    <div className='bg-DestinationMobile lg:bg-DestinationDesktop bg-center bg-no-repeat bg-cover h-screen ' >
+    <div className='bg-DestinationMobile md:bg-DestinationTablet lg:bg-DestinationDesktop bg-center bg-no-repeat bg-cover h-[140vh] md:h-screen ' >
       <section className='text-center h-[80vh] lg:p-20'>
           <h3 className='uppercase pt-24 font-BarlowCondensed tracking-widest lg:text-start lg:text-4xl mb-8'>
              <span className='text-gray-500 pr-2'>01</span> Pick your destination

@@ -8,19 +8,16 @@ import Home from "./pages/Home"
 import { useState } from "react"
 function App() {
   const [data, setData] = useState(extractedData)
-  // console.log(data.destinations)
- data.crew.map((members)=>{
-    // console.log(members.name)
-  })
+ 
   return (
     <div className="text-white h-[100dvh] w-[100%] overflow-x-hidden">
       <Router>
       <NavBar />
       <Routes>
-          < Route path="/" element={<Home/>}/>
-          < Route path="/destination" element={<Destination data={data.destinations}/>}/>
-          < Route path="/crew" element={<Crew data={data.crew}/>}/>
-          < Route path="/technology" element={<Technology data={data.technology}/>}/>
+          < Route path="/spaceTourism" element={<Home/>}/>
+          < Route path="/spaceTourism/destination" element={<Destination data={data.destinations}/>}/>
+          < Route path="/spaceTourism/crew" element={<Crew data={data.crew}/>}/>
+          < Route path="/spaceTourism/technology" element={<Technology data={data.technology}/>}/>
           
       </Routes>
       </Router>
